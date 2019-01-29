@@ -1,6 +1,35 @@
 # DesignQL
 
-Full-fledged design system specification for GraphQL.
+A self-documenting design system specification for GraphQL.
+
+```gql
+query {
+  theme {
+    colors
+    boxShadows
+    a11yCombos {
+      contrast
+      backgroundColor
+      color
+    }
+  }
+  component(name: { eq: "Button" }) {
+    docs
+    propsTable {
+      key
+      defaultValue
+      description
+      type {
+        name
+        description
+      }
+    }
+    styledApi {
+      permutations
+    }
+  }
+}
+```
 
 ## What is it?
 
