@@ -12,6 +12,8 @@ It also provides a convenient mechanism for cloning for prototyping one-offs or 
 
 When we build and document design systems we're often forced to reinvent the wheel with bespoke implementations.
 There are numerous design system and styleguide tools out there, but they often couple you to custom DSLs or lack flexibility.
+DesignQL seeks to provide users with a free and open API to build out design systems and document them with ease.
+Tables of props, playgrounds, and much more can be scaffolded out just from the source code and a colocated MDX file.
 
 These days design and development for teams often have numerous render targets.
 Keeping them in sync can be difficult, especially when attempting to design generatively, access programmatically, or combine with tools lacking read/write APIs.
@@ -22,7 +24,7 @@ We want to share it with the community for a few reasons:
 - :family: Improve upon it as a community
 - :recycle: Encourage adoption with other design/development tools
 - :wrench: Community-based implementations for other libraries/frameworks/etc
-- :lock_with_key: Avoid lock in for users
+- :lock: Avoid lock in for users
 
 ## Table of contents
 
@@ -43,7 +45,7 @@ We want to share it with the community for a few reasons:
 
 ## How does it work?
 
-A design system typically consists of the same key parts
+A design system typically consists of the same key parts:
 
 - theme
 - branding
@@ -69,10 +71,47 @@ Libraries:
 - graphql-js
 - Gatsby
 
+#### Example
+
+Here's an example Button component:
+
+```js
+import styled from 'styled-components'
+import { color, space } from 'styled-system'
+import { variant, size } from './styled-functions'
+
+/* @component */
+export const Button = styled.button`
+  appearance: button;
+
+  ${color}
+  ${space}
+  ${variant}
+  ${size}
+`
+
+Button.displayName = 'Button'
+
+Button.defaultProps = {
+  variant: 'primary',
+  size: 'md'
+}
+Button.propTypes = {
+  color: color.propTypes,
+  variant: variant.propTypes,
+  size: size.propTypes,
+  ...space.propTypes
+}
+```
+
 ### Naming conventions
+
+In order to keep the MVP as simple as possible, DesignQL currently expects a particular layout structure:
 
 - `src/Button.js`
 - `src/Button.mdx`
+
+If there isn't a colocated MDX file it's no problem, DesignQL will do its best to parse out metadata.
 
 ### Future
 
