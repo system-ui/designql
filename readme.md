@@ -28,9 +28,18 @@ We want to share it with the community for a few reasons:
 
 - [Features](#features)
 - [How does it work?](#how-does-it-work)
+  - [Implementation](#implementation)
+  - [Naming conventions](#namingconventions)
 - [Specification](#specification)
   - [Types](#types)
     - [DesignSystem](#designsystem)
+    - [Component](#component)
+    - [Theme](#theme)
+    - [Branding](#branding)
+    - [StyledFunction](#styledfunction)
+    - [Primitives](#primitives)
+      - [ColorMap](#colormap)
+      - [JSON](#json)
 
 ## How does it work?
 
@@ -47,6 +56,31 @@ DesignQL boils this down to a schema that can be shared amongst a team and their
 It exposes a GraphQL API that can be used to generate React code with many JSON-in-JS libraries and down the road other targets like (Atomic JSON, React Native, Vue, etc.).
 
 More importantly, it defines and provides an interface for programmatic access mentioned earlier.
+
+### Implementation
+
+DesignQL consists of multiple libraries that handle different types of source files.
+
+Libraries:
+
+- react-docgen
+- styled-system
+- MDX
+- graphql-js
+- Gatsby
+
+### Naming conventions
+
+- `src/Button.js`
+- `src/Button.mdx`
+
+### Future
+
+- Source theme data from numerous locations
+  - CSS Stats
+  - Figma
+  - Sketch
+  - Framer
 
 ## Specification
 
@@ -272,3 +306,11 @@ const resolvers = {
   JSON: GraphQLJSON
 }
 ```
+
+## Authors
+
+- John Otander
+
+## License
+
+MIT
