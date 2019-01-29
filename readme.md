@@ -47,15 +47,14 @@ We want to share it with the community for a few reasons:
 
 A design system typically consists of the same key parts:
 
-- theme
-- branding
-- styling
-- icons
-- components
-- documentation
+- :art: theme
+- :nail_care: branding
+- :ballot_box: components
+- :books: documentation
+- :trohpy: icons
 
 DesignQL boils this down to a schema that can be shared amongst a team and their projects.
-It exposes a GraphQL API that can be used to generate React code with many JSON-in-JS libraries and down the road other targets like (Atomic JSON, React Native, Vue, etc.).
+It exposes a GraphQL API that can be used to document React code with many CSS-in-JS libraries and down the road export to other render targets like (Atomic CSS, React Native, Vue).
 
 More importantly, it defines and provides an interface for programmatic access mentioned earlier.
 
@@ -68,7 +67,6 @@ Libraries:
 - react-docgen
 - styled-system
 - MDX
-- graphql-js
 - Gatsby
 
 #### Example
