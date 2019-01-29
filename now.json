@@ -1,5 +1,9 @@
 {
   "version": 2,
+  "alias": [
+    "designql.com",
+    "www.designql.com"
+  ],
   "builds": [
     { "src": "docs/*.md", "use": "mdx-builder" }
   ]
