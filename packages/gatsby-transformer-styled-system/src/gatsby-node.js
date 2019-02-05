@@ -81,7 +81,9 @@ exports.onCreateNode = async ({
   
   const nodeId = `${node.id}--${name}--StyledSystem`
   const contentDigest = digest(content)
-  const css = metadata.componentStyle.rules.filter(s => typeof s === 'string').join('')
+  const css = metadata.componentStyle
+    ? metadata.componentStyle.rules.filter(s => typeof s === 'string').join('')
+    : ''
 
   let styledSystemNode = {
     name,

@@ -115,7 +115,7 @@ exports.onCreateWebpackConfig = ({ loaders, actions }) => {
       rules: [
         {
           test: /\.js$/,
-          include: path.dirname(require.resolve('gatsby-theme-docs')),
+          include: path.dirname(require.resolve('gatsby-theme-designql')),
           use: [loaders.js()]
         }
       ]
