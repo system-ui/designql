@@ -1,15 +1,14 @@
 {
+  "private": true,
   "name": "designql",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "version": "0.0.1",
+  "description": "A self-documenting design system using GraphQL",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "yarn workspace basic start"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "workspaces": [
+    "packages/*",
+    "examples/*",
+    "docs"
+  ]
 }
