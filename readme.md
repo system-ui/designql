@@ -80,7 +80,7 @@ A design system typically consists of the same key parts:
 - :nail_care: branding
 - :ballot_box: components
 - :books: documentation
-- :trohpy: icons
+- :trophy: icons
 
 DesignQL boils this down to a schema that can be shared amongst a team and their projects.
 It exposes a GraphQL API that can be used to document React code with many CSS-in-JS libraries and down the road export to other render targets like (Atomic CSS, React Native, Vue).
