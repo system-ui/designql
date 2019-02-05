@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-transformer-styled-system",
+  "description": "Gatsby transformer to create styled-system docs nodes",
+  "version": "0.0.5",
+  "author": "John Otander",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d .",
+    "prepublish": "yarn build"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-transformer"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "babel-preset-gatsby-package": "^0.1.3"
+  },
+  "dependencies": {
+    "system-docs": "^1.0.0-1"
+  }
+}
