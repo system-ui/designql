@@ -15,9 +15,24 @@ const DESCRIPTIONS = {
   flex: 'Set flex attribute',
   order: 'Set flex order',
   textAlign: 'Set text alignment',
+  lineHeight: 'Set line height',
   width: 'Set width',
   fontWeight: 'Set font weight',
-  fontSize: 'Set font size'
+  fontSize: 'Set font size',
+  p: 'Set padding',
+  pl: 'Set left padding',
+  pr: 'Set right padding',
+  pt: 'Set top padding',
+  pb: 'Set bottom padding',
+  py: 'Set vertical padding',
+  px: 'Set horizontal padding',
+  m: 'Set margin',
+  ml: 'Set left margin',
+  mr: 'Set right margin',
+  mt: 'Set top margin',
+  mb: 'Set bottom margin',
+  my: 'Set vertical margin',
+  mx: 'Set horizontal margin'
 }
 
 const formatDefaultValue = value => value.replace(/^'/, '').replace(/'$/, '')

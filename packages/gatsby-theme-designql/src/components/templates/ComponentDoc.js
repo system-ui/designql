@@ -6,7 +6,6 @@ import Component from '../Component'
 export default props => (
   <>
     <Component {...props.pageContext} {...props.data} />
-    <pre>{JSON.stringify(props, null, 2)}</pre>
   </>
 )
 
