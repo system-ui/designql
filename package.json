@@ -4,11 +4,15 @@
   "version": "0.0.1",
   "description": "A self-documenting design system using GraphQL",
   "scripts": {
-    "start": "yarn workspace basic start"
+    "start": "yarn workspace basic start",
+    "publish": "lerna publish"
   },
   "workspaces": [
     "packages/*",
     "examples/*",
     "docs"
-  ]
+  ],
+  "dependencies": {
+    "lerna": "^3.13.1"
+  }
 }
