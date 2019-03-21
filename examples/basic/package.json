@@ -7,6 +7,7 @@
     "build": "gatsby build"
   },
   "dependencies": {
+    "dotenv": "^6.2.0",
     "gatsby": "latest",
     "gatsby-theme-designql": "*"
   }

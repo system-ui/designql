@@ -15,6 +15,7 @@
     "@mdx-js/tag": "^0.16.6",
     "gatsby-mdx": "^0.3.3",
     "gatsby-plugin-page-creator": "^2.0.5",
+    "gatsby-source-figma": "^1.0.0",
     "gatsby-source-filesystem": "^2.0.13",
     "gatsby-theme-redirects": "^0.0.5",
     "gatsby-transformer-react-docgen": "^3.0.0",
