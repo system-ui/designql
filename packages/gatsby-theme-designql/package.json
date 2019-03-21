@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-designql",
   "description": "DesignQL implemented as a Gatsby theme",
-  "version": "0.0.5",
+  "version": "0.0.1-alpha.0",
   "license": "MIT",
   "author": "John Otander",
   "main": "gatsby-config.js",
@@ -19,7 +19,7 @@
     "gatsby-source-filesystem": "^2.0.13",
     "gatsby-theme-redirects": "^0.0.5",
     "gatsby-transformer-react-docgen": "^3.0.0",
-    "gatsby-transformer-styled-system": "^0.0.5",
+    "gatsby-transformer-styled-system": "^0.0.1-alpha.0",
     "gatsby-ui": "^0.0.5",
     "lodash.kebabcase": "^4.1.1",
     "mkdirp": "^0.5.1",
